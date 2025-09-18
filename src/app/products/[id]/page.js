@@ -1,6 +1,7 @@
 import Navbar from "../../components/navbar";
 import { Rate } from 'antd';
 import Modal from "../../components/modal1";
+import Image from "next/image";
 export default async function ProductPage({
     params,
 }) {
@@ -15,7 +16,7 @@ export default async function ProductPage({
             <section className="max-w-5xl mx-auto p-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-white shadow-md rounded-2xl p-6">
                     <div className="flex justify-center items-center">
-                        <img
+                        <Image
                             src={product.image}
                             alt={product.title}
                             className="h-80 w-80 object-contain"

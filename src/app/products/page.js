@@ -1,5 +1,6 @@
 "use Client";
 import Link from "next/link";
+import Image from "next/image";
 import Footer from "../components/footer";
 import Herosection from "../components/herosection";
 import Navbar from "../components/navbar";
@@ -26,7 +27,7 @@ console.log(products);
             key={p.id}
             className="w-[350px] h-[550px] bg-white border p-4 rounded shadow hover:shadow-md transition flex flex-col"
           >
-            <img
+            <Image
               src={p.image}
               alt={p.title}
               className=" w-100 h-[75%] object-contain mb-3"
