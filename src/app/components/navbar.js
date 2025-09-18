@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 const Navbar = () => {
     return (
@@ -10,7 +11,7 @@ const Navbar = () => {
                         href="/"
                         className="flex items-center space-x-3 rtl:space-x-reverse"
                     >
-                        <img
+                        <Image
                             src="/LOGO.png"
                             className="h-8"
                             alt="Flowbite Logo"

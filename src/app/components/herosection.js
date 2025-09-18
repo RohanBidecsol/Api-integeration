@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Image from 'next/image'
 const Herosection = () => {
 
   return (
@@ -9,7 +9,7 @@ const Herosection = () => {
       <div className="container mx-auto flex flex-col md:flex-row items-center gap-8 px-4">
         {/* Product Image */}
         <div className="flex-1">
-          <img
+          <Image
             src="/hero.jpg"
             alt="Featured Product"
             className="w-full h-[400px] object-contain rounded-lg shadow-lg"
